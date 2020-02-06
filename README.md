@@ -1,4 +1,4 @@
-# oral_squamous_longitudinal
+# Analysis of oral squamous cell carcinomas single-cell data
 ================
 
 Utilities repository with scripts to perform variants calling from single-cell data by https://www.nature.com/articles/s41467-018-07261-3. 
