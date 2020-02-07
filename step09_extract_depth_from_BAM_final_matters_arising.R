@@ -103,19 +103,19 @@ rownames(depth_tbl) <- names_row
 colnames(depth_tbl) <- names_col
 
 for(i in 1:nrow(depth_tbl)) {
-    curr <- strsplit(res[["bam1"]],"\t")[[1]]
+    curr <- strsplit(res[["bam1"]],"\t")[[i]]
     curr1 <- as.numeric(curr[3:length(curr)])
-    curr <- strsplit(res[["bam2"]],"\t")[[1]]
+    curr <- strsplit(res[["bam2"]],"\t")[[i]]
     curr2 <- as.numeric(curr[3:length(curr)])
-    curr <- strsplit(res[["bam3"]],"\t")[[1]]
+    curr <- strsplit(res[["bam3"]],"\t")[[i]]
     curr3 <- as.numeric(curr[3:length(curr)])
-    curr <- strsplit(res[["bam4"]],"\t")[[1]]
+    curr <- strsplit(res[["bam4"]],"\t")[[i]]
     curr4 <- as.numeric(curr[3:length(curr)])
-    curr <- strsplit(res[["bam5"]],"\t")[[1]]
+    curr <- strsplit(res[["bam5"]],"\t")[[i]]
     curr5 <- as.numeric(curr[3:length(curr)])
-    curr <- strsplit(res[["bam6"]],"\t")[[1]]
+    curr <- strsplit(res[["bam6"]],"\t")[[i]]
     curr6 <- as.numeric(curr[3:length(curr)])
-    curr <- strsplit(res[["bam7"]],"\t")[[1]]
+    curr <- strsplit(res[["bam7"]],"\t")[[i]]
     curr7 <- as.numeric(curr[3:length(curr)])
     curr <- as.numeric(c(curr1,curr2,curr3,curr4,curr5,curr6,curr7))
     for(j in 1:ncol(depth_tbl)) {
